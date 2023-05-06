@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  background-color: #111;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 24px;
+}
+
+video {
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  height: 500px;
+}
+
+.video-2 {
+  position: absolute;
+  z-index: -1;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
