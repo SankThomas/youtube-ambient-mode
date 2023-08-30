@@ -9,6 +9,6 @@ videoOne.addEventListener("pause", () => {
   videoTwo.pause();
 });
 
-videoOne.addEventListener("repeat", () => {
-  videoTwo.repeat();
+videoOne.addEventListener("timeupdate", () => {
+  videoTwo.currentTime = videoOne.currentTime;
 });
